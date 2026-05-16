@@ -88,7 +88,12 @@ def clean_outlets(df_master: pd.DataFrame, df_coords: pd.DataFrame) -> tuple[pd.
     rejected_records.append(dup_gps)
     merged = merged[~dup_gps_mask]
     
-    # 4. Fill Missing Values
+    # 4. Standardise Categories
+    merged['Outlet_Type'] = merged['Outlet_Type'].str.strip()
+    spelling_map = {'Grocry': 'Grocery', 'Bakry': 'Bakery'}
+    merged['Outlet_Type'] = merged['Outlet_Type'].replace(spelling_map)
+    
+    merged['Outlet_Size'] = merged['Outlet_Size'].str.strip().str.title()
     merged['Outlet_Size'] = merged['Outlet_Size'].fillna('Unknown')
     
     if rejected_records:
