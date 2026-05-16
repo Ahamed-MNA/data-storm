@@ -6,8 +6,13 @@ import logging
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 
-# Add src to path
-sys.path.append(os.path.abspath('src'))
+# Add project root to path relative to this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.abspath(os.path.join(script_dir, '..', '..'))
+src_path = os.path.join(root_dir, 'src')
+
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
 
 from validation.quality_checks import (
     check_nulls, 
@@ -17,7 +22,7 @@ from validation.quality_checks import (
 )
 
 def validate_transactions():
-    data_path = 'data/bronze/'
+    data_path = os.path.join(root_dir, 'data', 'bronze')
     trans_file = os.path.join(data_path, 'transactions_history_final.csv')
     outlet_file = os.path.join(data_path, 'outlet_master.csv')
 
