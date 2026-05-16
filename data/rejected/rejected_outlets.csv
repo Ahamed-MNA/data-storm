@@ -1,0 +1,41 @@
+Outlet_ID,Outlet_Size,Cooler_Count,Outlet_Type,Latitude,Longitude,failure_reason
+OUT_00090,Large,4,Bakry,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_01864,Medium,1,Eatery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_02389,Small,0,Bakery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_02426,small,0,Eatery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_02795,Small,1,Eatery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_02862,Small,1,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_03691,Small,1,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_06028,Small,1,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_07259,Large,4,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_08564,Large,4,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_08723,Medium,2,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_09014,Large,4,Kiosk,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_10177,Medium,2,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_10229,Large,2,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_10416,Small,1,Kiosk,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_10530,Large,3,Eatery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_10753,Small,0,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_11877,Small,0,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_12014,Small,0,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_12565,Small,1,Bakery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_13327,Small,1,Bakery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_13567,Small,1,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_13998,Extra Large,5,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_14462,Medium,2,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_14745,Medium,2,Eatery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_15238,Extra Large,3,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_15630,Small,0,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_15915,Small,0,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_16192,Medium,2,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_16360,Small,1,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_17174,Small,0,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_17499,Small,0,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_17661,Large,2,Kiosk,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_17812,Small,0,Grocery,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_18356,Small,1,Kiosk,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_18975,Medium,1,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_19145,Small,1,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_19170,Small,0,Pharmacy,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_19319,Medium,2,SMMT,0.0,0.0,Coordinates Outside Sri Lanka Bounds
+OUT_19330,Small,0,Hotel,0.0,0.0,Coordinates Outside Sri Lanka Bounds
