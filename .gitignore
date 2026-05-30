@@ -2,3 +2,5 @@ data/bronze
 data/gold/
 brain/
 __pycache__
+.env
+.venv/
