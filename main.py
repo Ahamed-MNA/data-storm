@@ -27,6 +27,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def step_poi(use_legacy_coords: bool):
+    """Run POI and Competitor Graph pipeline."""
+    from poi.pipeline import run_poi_and_competitor_pipeline
+    run_poi_and_competitor_pipeline(use_legacy_coords=use_legacy_coords)
+
+
 def step_optimize():
     """Run marketing spend optimization."""
     from optimization.market_spend_optim import run_marketing_spend_optimization
@@ -45,16 +51,31 @@ def main():
     parser.add_argument(
         '--step',
         default='optimize',
-        choices=['optimize', 'all'],
+        choices=['optimize', 'poi', 'all'],
         help='Which pipeline step to run (default: optimize)',
+    )
+    parser.add_argument(
+        '--corrected-coords',
+        action='store_true',
+        help='Use corrected coordinates from dim_outlets.parquet instead of uncorrected bronze coordinates',
     )
     args = parser.parse_args()
 
+    use_legacy_coords = not args.corrected_coords
+
     try:
-        step_optimize()
-        logger.info("Pipeline step 'optimize' completed successfully [OK].")
+        if args.step == 'poi':
+            step_poi(use_legacy_coords)
+            logger.info("Pipeline step 'poi' completed successfully [OK].")
+        elif args.step == 'optimize':
+            step_optimize()
+            logger.info("Pipeline step 'optimize' completed successfully [OK].")
+        elif args.step == 'all':
+            step_poi(use_legacy_coords)
+            step_optimize()
+            logger.info("All pipeline steps completed successfully [OK].")
     except Exception as exc:
-        logger.error(f"Pipeline step 'optimize' FAILED: {exc}")
+        logger.error(f"Pipeline step execution FAILED: {exc}")
         raise
 
 
