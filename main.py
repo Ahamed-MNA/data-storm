@@ -33,6 +33,15 @@ def step_poi(use_legacy_coords: bool):
     run_poi_and_competitor_pipeline(use_legacy_coords=use_legacy_coords)
 
 
+def step_features():
+    """Run Silver to Gold feature engineering pipeline."""
+    from features.build_gold_sfa import build_refined_gold_layer
+    logger.info("═" * 60)
+    logger.info("RUNNING FEATURE ENGINEERING PIPELINE (SILVER -> GOLD)")
+    logger.info("═" * 60)
+    build_refined_gold_layer()
+
+
 def step_optimize():
     """Run marketing spend optimization."""
     from optimization.market_spend_optim import run_marketing_spend_optimization
@@ -51,7 +60,7 @@ def main():
     parser.add_argument(
         '--step',
         default='optimize',
-        choices=['optimize', 'poi', 'all'],
+        choices=['optimize', 'poi', 'features', 'all'],
         help='Which pipeline step to run (default: optimize)',
     )
     parser.add_argument(
@@ -67,11 +76,15 @@ def main():
         if args.step == 'poi':
             step_poi(use_legacy_coords)
             logger.info("Pipeline step 'poi' completed successfully [OK].")
+        elif args.step == 'features':
+            step_features()
+            logger.info("Pipeline step 'features' completed successfully [OK].")
         elif args.step == 'optimize':
             step_optimize()
             logger.info("Pipeline step 'optimize' completed successfully [OK].")
         elif args.step == 'all':
             step_poi(use_legacy_coords)
+            step_features()
             step_optimize()
             logger.info("All pipeline steps completed successfully [OK].")
     except Exception as exc:

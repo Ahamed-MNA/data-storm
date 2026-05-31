@@ -7,11 +7,11 @@ The optimization uses a logarithmic spend-to-volume response curve to model dimi
 | Metric | Value |
 | :--- | :--- |
 | **Total Promotional Budget** | LKR 5,000,000.00 |
-| **Total Allocated Spend** | LKR 4,999,999.98 (100.00%) |
-| **Expected Total Volume Lift** | 1,238,686.33 Liters |
+| **Total Allocated Spend** | LKR 4,999,999.97 (100.00%) |
+| **Expected Total Volume Lift** | 1,238,686.46 Liters |
 | **Average Return on Investment (ROI)** | 0.24774 Liters/LKR |
 | **Active Outlets Targeted (> 0 LKR)** | 1,981 / 8,989 (22.0%) |
-| **Outlets Pushed to SFA Demand Ceiling** | 2 |
+| **Outlets Pushed to SFA Demand Ceiling** | 0 |
 | **Diminishing Return Scale Parameter ($b$)** | 0.0005 |
 
 ---
@@ -21,9 +21,9 @@ This table shows how the budget is distributed across the distributors in the We
 
 | Distributor ID | Number of Outlets | Active Outlets | Total Spend (LKR) | Share of Spend (%) | Volume Lift (Liters) | Avg ROI (L/LKR) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| DIST_W_01 | 3,016 | 663 | LKR 1,704,083.88 | 34.08% | 424,565.72 L | 0.24915 |
-| DIST_W_02 | 2,983 | 659 | LKR 1,608,822.03 | 32.18% | 393,288.83 L | 0.24446 |
-| DIST_W_03 | 2,990 | 659 | LKR 1,687,094.07 | 33.74% | 420,831.78 L | 0.24944 |
+| DIST_W_01 | 3,016 | 663 | LKR 1,704,035.15 | 34.08% | 424,558.24 L | 0.24915 |
+| DIST_W_02 | 2,983 | 659 | LKR 1,608,904.09 | 32.18% | 393,301.59 L | 0.24445 |
+| DIST_W_03 | 2,990 | 659 | LKR 1,687,060.73 | 33.74% | 420,826.63 L | 0.24944 |
 
 ---
 
@@ -32,11 +32,11 @@ Diminishing return optimization tends to favor mature, larger-volume outlets whi
 
 | Outlet Size | Number of Outlets | Active Outlets | Total Spend (LKR) | Share of Spend (%) | Volume Lift (Liters) | Avg ROI (L/LKR) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Extra Large | 428 | 428 | LKR 2,669,145.58 | 53.38% | 766,169.79 L | 0.28705 |
-| Large | 1,267 | 1,243 | LKR 1,846,116.82 | 36.92% | 373,357.47 L | 0.20224 |
-| Medium | 2,608 | 112 | LKR 180,219.50 | 3.60% | 37,005.35 L | 0.20533 |
-| Small | 4,590 | 193 | LKR 297,838.60 | 5.96% | 60,815.86 L | 0.20419 |
-| Unknown | 96 | 5 | LKR 6,679.48 | 0.13% | 1,337.86 L | 0.20029 |
+| Extra Large | 428 | 428 | LKR 2,669,089.05 | 53.38% | 766,161.07 L | 0.28705 |
+| Large | 1,267 | 1,243 | LKR 1,846,047.18 | 36.92% | 373,346.94 L | 0.20224 |
+| Medium | 2,608 | 112 | LKR 180,213.03 | 3.60% | 37,004.39 L | 0.20534 |
+| Small | 4,590 | 193 | LKR 297,971.50 | 5.96% | 60,836.25 L | 0.20417 |
+| Unknown | 96 | 5 | LKR 6,679.21 | 0.13% | 1,337.81 L | 0.20029 |
 
 ---
 
@@ -45,13 +45,13 @@ Different retail formats exhibit different sales volumes and potential.
 
 | Outlet Type | Number of Outlets | Active Outlets | Total Spend (LKR) | Share of Spend (%) | Volume Lift (Liters) | Avg ROI (L/LKR) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Bakery | 1,395 | 293 | LKR 755,457.49 | 15.11% | 187,973.72 L | 0.24882 |
-| Eatery | 1,263 | 256 | LKR 598,233.34 | 11.96% | 145,768.13 L | 0.24366 |
-| Grocery | 1,428 | 320 | LKR 765,689.94 | 15.31% | 186,699.85 L | 0.24383 |
-| Hotel | 1,251 | 281 | LKR 770,734.21 | 15.41% | 194,587.86 L | 0.25247 |
-| Kiosk | 1,184 | 279 | LKR 721,637.14 | 14.43% | 180,016.65 L | 0.24946 |
-| Pharmacy | 1,228 | 299 | LKR 720,413.36 | 14.41% | 177,230.66 L | 0.24601 |
-| SMMT | 1,240 | 253 | LKR 667,834.50 | 13.36% | 166,409.46 L | 0.24918 |
+| Bakery | 1,395 | 293 | LKR 755,436.01 | 15.11% | 187,970.37 L | 0.24882 |
+| Eatery | 1,263 | 256 | LKR 598,230.27 | 11.96% | 145,767.76 L | 0.24366 |
+| Grocery | 1,428 | 320 | LKR 765,667.36 | 15.31% | 186,696.33 L | 0.24383 |
+| Hotel | 1,251 | 281 | LKR 770,712.80 | 15.41% | 194,584.59 L | 0.25247 |
+| Kiosk | 1,184 | 279 | LKR 721,616.55 | 14.43% | 180,013.51 L | 0.24946 |
+| Pharmacy | 1,228 | 299 | LKR 720,521.28 | 14.41% | 177,247.32 L | 0.24600 |
+| SMMT | 1,240 | 253 | LKR 667,815.70 | 13.36% | 166,406.58 L | 0.24918 |
 
 ---
 *Report generated on completion of the Optimization Module.*
